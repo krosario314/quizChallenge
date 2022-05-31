@@ -50,29 +50,9 @@ body {
     background-color: rgb(101, 162, 104);
 }
 
-.first-button {
+/* Starting the quiz */
+.startQuiz {
+    font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-#startBtn {
-    padding: 2%;
-    font-size: 25px;
-    font-weight: 500px;
-    color: rgb(101, 162, 104);
-}
-
-#question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Hide questions until start button is pushed, then display first question  */
-
-#question-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

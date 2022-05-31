@@ -25,26 +25,18 @@
             <p>Good Luck!</p>
         </section>
         <br>
-        <!--questions displayed-->
-        <div class="first-button">
-            <button id="startBtn">Start Quiz</button>
+        <div class="container">
+            <div class="startQuiz"><button>Start Quiz</button></div>
+            <div class="quiz" style="display: none">
+                <div class="question"></div>
+                <div class="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                    <div class="choice" id="D" onclick="checkAnswer('D')"></div>
         </div>
-        <br>
-        <br>
-        <div id="container">
-            <div id="question">Question</div>
-                <div id="question-container"></div>
-                <br>
-                <div id="answerBtns" class="answer-buttons">
-                    <button class="btn">Answer</button>
-                    <button class="btn">Answer</button>
-                    <button class="btn">Answer</button>
-                    <button class="btn">Answer</button>
-                </div>
-            </div>
-        <div class="quizControls">
-            <button id="nextBtn">Next question</button>
-        </div>
+        <div class="timer">
+            <div id="counter"></div>
         </div>
         <script src="./script.js"></script>
     </body>
