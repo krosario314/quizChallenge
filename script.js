@@ -10,6 +10,8 @@ var counter = document.getElementById("counter");
 var scoreDiv = document.getElementById("scoreContainer");
 
 // create quiz questions
+start.addEventListener("click", startQuiz);
+
 
 let questions = [
     {
@@ -48,7 +50,7 @@ let questions = [
         choiceD : "Wrong",
         correct : "B"
     },{
-        questions : "What is an error in a program that prevents the program from running as expected?"
+        questions : "What is an error in a program that prevents the program from running as expected?",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
@@ -58,3 +60,47 @@ let questions = [
 ];
 
 // create more variables
+var lastQuestion = questions.length - 1;
+let runningQuestion = 0;
+let count = 0;
+var questionTime = 10;
+let TIMER;
+let score = 0;
+
+// questions
+function renderQuestion(){
+    let q = questions[runningQuestion];
+
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
+
+start.addEventListener("click", startQuiz);
+
+// starting quiz
+function startQuiz(){
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display = "block";
+    renderCounter();
+    TIMER = setInterval(renderCounter, 1000);
+}
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+    } else{
+        count = 0;
+        answerIsWrong();
+        if(runningQuestion < lastQuestion){
+            runningQuestion++;
+            renderQuestion();
+        } else{
+            clearInterval(TIMER);
+            scoreRender();
+        }
+    }
+}

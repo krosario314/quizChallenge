@@ -1,0 +1,32 @@
+ body {
+     background-color: rgb(118, 192, 118)
+ }
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     
+     font-family: 'Courier New', Courier, monospace; 
+ }
+
+ h1 {
+     font-size: 80px;
+     color: white;
+     text-align: center;
+     border-style: double;
+     border-width: 45px;
+     border-color: gainsboro;
+ }
+
+ .container {
+     width: 100vw;
+     height: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 80rem;
+     margin: 0 auto;
+     padding: 2rem;
+ }
+ 
