@@ -1,5 +1,6 @@
 body {
-    color: white;
+    background-color: whitesmoke;
+    color: rgb(106, 154, 106);
 }
 
 .choice-container {
@@ -7,7 +8,7 @@ body {
     margin-bottom: 0.9rem;
     width: 100;
     border-radius: 3px;
-    background-color: rgb(106, 154, 106);
+    background-color: yellow);
     font-size: 3rem;
     min-width: 88rem;
 }
@@ -21,12 +22,13 @@ body {
 
 .choice-prefix {
     padding: 2rem 3rem;
-    color: white;
+    color: black;
 }
 
 .choice-text {
     padding: 2rem;
     width: 75%;
+    color: black;
 }
 
 .correct {
