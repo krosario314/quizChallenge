@@ -5,17 +5,18 @@ body {
 
 .choice-container {
     display: flex;
-    margin-bottom: 0.9rem;
-    width: 100;
+    margin-top: 3%;
+    margin-left: 2in;
+    width: 70%;
+    height: 30%;
     border-radius: 3px;
-    background-color: yellow;
-    font-size: 3rem;
-    min-width: 88rem;
+    background-color: rgb(106, 154, 106);
+    font-size: 30px;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 green;
+    box-shadow: 0 0.4rem 1.4rem 0 black;
     transform: scale(1.05);
     transform: transform 100ms;
 }
