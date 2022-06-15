@@ -8,25 +8,17 @@
 <body>
     <header>
         <div>
-            <a id="highscore-btn" href="">Highscores</a>
+            <a id="highscore-btn" href="./scorePage.html">Highscores</a>
         </div>
-        <div>
-            <p>Time: <span id="timeLeft">xxx</span></p>
-        </div>
+        <div id="timer">Time left: 60</div>
     </header>
     <div id="startPage">
-        <div id="buttonContainer">
-            <p id="questionContainer">The Coding Quiz</p>
-            <p id="scoreContainer"></p>
-            <p id="scoreNames"></p>
-            <textarea id="nameEntry"></textarea>
-            <button class="btn" id="start-btn">Start</button>
-            <button class="btn" id="answer1"></button>
-            <button class="btn" id="answer2"></button>
-            <button class="btn" id="answer3"></button>
-            <button class="btn" id="answer4"></button>
-            <button class="btn" id="saveScore"></button>
-        </div>
+        <h1>The Coding Quiz</h1>
+        <h3 id="quizText">Test your coding knowledge!</h3>
+        <!-- Start quiz button here -->
+        <button id="main-commands" href="./assets/Javascript/quiz.js">Start Quiz</button>
     </div>
+    <script src="./assets/Javascript/quiz.js"></script>
+    <script src="./assets/Javascript/timer.js"></script>
 </body>
 </html>
