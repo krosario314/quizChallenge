@@ -8,17 +8,10 @@
 </head>
 <body>
     <header>
-        <div>
-            <a id="highscore-btn" href="./scorePage.html">Highscores</a>
-        </div>
-        <div id="timer">Time left: x</div>
-    </header>
-    <div id="startPage">
+        <p>For computer science lovers!</p>
         <h1>The Coding Quiz</h1>
-        <h3 id="quizText">Test your coding knowledge!</h3>
-        <!-- Start quiz button here -->
-        <button id="main-commands" href="./assets/Javascript/quiz.js">Start Quiz</button>
-    </div>
+    </header>
+    <!-- quiz buttons -->
     <div id="theQuiz">
         <div id="timer">Time left: </div>
             <div id="theQuestions"><p>Questions Display</p></div>
@@ -42,8 +35,10 @@
         <div id="highscoreNicknames"></div>
         <div id="highscore-List"></div>
     </div>
-    <div id="endQuizCommands"></div>
+    <div id="endQuizCommands">
+        <button id="takeAgain" onclick="replayQuiz()">Take Quiz Again</button>
+        <button id="clearScores" onclick="clearScores()">Clear Highscores</button>
+    </div>
     <script src="./assets/Javascript/quiz.js"></script>
-    <script src="./assets/Javascript/timer.js"></script>
 </body>
 </html>

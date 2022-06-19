@@ -1,3 +1,20 @@
-var quizTextContainer = document.getElementById("#quizText")
-
-quizTextContainer.setAttribute("style", "color: blue");
+// My variables
+var quizText = document.getElementById("theQuiz");
+var quizResults = document.getElementById("result");
+var finalScoreContainer = document.getElementById("");
+var quizOver = document.getElementById("");
+var questionsContainer = document.getElementById("");
+var quizTimer = document.getElementById("");
+var startBtn = document.getElementById("");
+var startPage = document.getElementById("");
+var highscoreEl = document.getElementById("");
+var highscoreContainer = document.getElementById("");
+var highscoreUsername = document.getElementById("");
+var usernameDisplay = document.getElementById("");
+var endQuizBtns = document.getElementById("");
+var submitBtn = document.getElementById("");
+var highscoreDisplay = document.getElementById("");
+var buttonA = document.getElementById("");
+var buttonB = document.getElementById("");
+var buttonC = document.getElementById("");
+var buttonD = document.getElementById("");
