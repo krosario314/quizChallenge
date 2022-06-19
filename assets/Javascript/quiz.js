@@ -177,4 +177,29 @@ function clearScores(){
 }
 
 // Restart quiz
-function
+function restartQuiz(){
+    highscoreEl.style.display = "none";
+    quizOver.style.display = "none";
+    startPage.style.display = "flex";
+    timeLeft = 90;
+    score = 0;
+    currentQuestionEl = 0;
+}
+// corrects and incorrect
+function checkAnswer(){
+    correct = quizQuestions[currentQuestionEl].correctAnswer;
+    if (answer === correct && currentQuestionEl !== finalQuestionEl){
+        score++;
+        alert("Correct!");
+        currentQuestionEl++;
+        generateQuizQuestion();
+    } else if (answer !== correct && currentQuestionEl !== finalQuestionEl){
+        alert("Incorrect!")
+        currentQuestionEl++;
+        generateQuizQuestion();
+    } else {
+        showScore();
+    }
+}
+// start quiz button here
+startBtn.addEventListener("click", startQuiz);
