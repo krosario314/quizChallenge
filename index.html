@@ -12,28 +12,35 @@
         <h1>The Coding Quiz</h1>
     </header>
     <!-- quiz buttons -->
+    <div id="startPageCommands">
+        <button id="startpageButton">Start Quiz</button>
+        <button id="startpageHighscore" onclick="showHighscore()">Highscores</button>
+    </div>
+    <!-- Quiz element -->
     <div id="theQuiz">
-        <div id="timer">Time left: </div>
+        <div id="timeLeft">Time left: </div>
             <div id="theQuestions"><p>Questions Display</p></div>
-                <button id="a" onclick="checkAnswer('a')">a</button>"
-                <button id="b" onclick="checkAnswer('b')">b</button>"
-                <button id="c" onclick="checkAnswer('c')">c</button>"
-                <button id="d" onclick="checkAnswer('d')">d</button>"
+                <button id="a" onclick="checkAnswer('a')">a</button>
+                <button id="b" onclick="checkAnswer('b')">b</button>
+                <button id="c" onclick="checkAnswer('c')">c</button>
+                <button id="d" onclick="checkAnswer('d')">d</button>
             <div id="result"></div>
     </div>
+    <!-- End of quiz -->
     <div id="quizOver">
         <div id="finalScore"></div>
         <input type="text" size="30" placeholder="Enter nickname" name="intials" id="initials"/>
         <button id="submit">Submit</button>
     </div>
+    <!-- End of quiz buttons -->
     <div id="highscoreContainer">
     <div id="high-scores-page">
         <div id="highscoreTitle">
             <h3>User Nickname</h3>
             <h3>Score</h3>
         </div>
-        <div id="highscoreNicknames"></div>
-        <div id="highscore-List"></div>
+        <div id="highscoreNicknames">Nicknames</div>
+        <div id="highscore-List">List</div>
     </div>
     <div id="endQuizCommands">
         <button id="takeAgain" onclick="replayQuiz()">Take Quiz Again</button>
