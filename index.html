@@ -4,13 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Code Quiz</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
     <header>
         <div>
             <a id="highscore-btn" href="./scorePage.html">Highscores</a>
         </div>
-        <div id="timer">Time left: 60</div>
+        <div id="timer">Time left: x</div>
     </header>
     <div id="startPage">
         <h1>The Coding Quiz</h1>
@@ -18,6 +19,30 @@
         <!-- Start quiz button here -->
         <button id="main-commands" href="./assets/Javascript/quiz.js">Start Quiz</button>
     </div>
+    <div id="theQuiz">
+        <div id="timer">Time left: </div>
+            <div id="theQuestions"><p>Questions Display</p></div>
+                <button id="a" onclick="checkAnswer('a')">a</button>"
+                <button id="b" onclick="checkAnswer('b')">b</button>"
+                <button id="c" onclick="checkAnswer('c')">c</button>"
+                <button id="d" onclick="checkAnswer('d')">d</button>"
+            <div id="result"></div>
+    </div>
+    <div id="quizOver">
+        <div id="finalScore"></div>
+        <input type="text" size="30" placeholder="Enter nickname" name="intials" id="initials"/>
+        <button id="submit">Submit</button>
+    </div>
+    <div id="highscoreContainer">
+    <div id="high-scores-page">
+        <div id="highscoreTitle">
+            <h3>User Nickname</h3>
+            <h3>Score</h3>
+        </div>
+        <div id="highscoreNicknames"></div>
+        <div id="highscore-List"></div>
+    </div>
+    <div id="endQuizCommands"></div>
     <script src="./assets/Javascript/quiz.js"></script>
     <script src="./assets/Javascript/timer.js"></script>
 </body>
