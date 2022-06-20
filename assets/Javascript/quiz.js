@@ -117,15 +117,15 @@ function startQuiz(){
 }
 // Highscore page
 function showScore(){
-    quizText.style.display = "none"
+    quizText.style.display = "none";
     quizOver.style.display = "flex";
     clearInterval(timerInterval);
-    highscoreUsername.value = "";
+    highscoreUsername.value = " ";
     finalScoreContainer.innerHTML = "Your score is " + score + "/" + quizQuestions.length + " !";
 }
 // Saves scores and nickname with onClick
 submitBtn.addEventListener("click", function highscore(){
-    if (highscoreUsername.value === "") {
+    if (highscoreUsername.value === " ") {
         alert("Must enter a nickname");
         return false;
     } else {
@@ -186,7 +186,7 @@ function restartQuiz(){
     currentQuestionEl = 0;
 }
 // corrects and incorrect
-function checkAnswer(){
+function checkAnswer(answer){
     correct = quizQuestions[currentQuestionEl].correctAnswer;
     if (answer === correct && currentQuestionEl !== finalQuestionEl){
         score++;

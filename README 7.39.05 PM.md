@@ -16,6 +16,7 @@ The application first presents you with the title of the application along with 
 When I click on the highscores button back on the home page, I am then presented text area used to collect user's input to save my name and quiz score.
 #
 ## Why was this app made?:
+This application was made to allow users to test their knowledge in coding and how fast they can finish the quiz with no penalizations. 
 #
 ## How do users use it?:
 #
