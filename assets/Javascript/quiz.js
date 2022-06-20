@@ -28,52 +28,52 @@ var quizQuestions = [{
     choiceC: "A list of to do instructions for robots",
     choiceD: "A secret message written in numbers and letters",
     correctAnswer: "b"
-},
+    },
 
-{
-    question: "What's an 'event' in coding?",
-    choiceA: "A function to celebrate a special occasion",
-    choiceB: "A way for your computer to cool down",
-    choiceC: "An action that causes something to happen",
-    choiceD: "A coding seminar",
-    correctAnswer: "c"
-},
+    {
+        question: "What's an 'event' in coding?",
+        choiceA: "A function to celebrate a special occasion",
+        choiceB: "A way for your computer to cool down",
+        choiceC: "An action that causes something to happen",
+        choiceD: "A coding seminar",
+        correctAnswer: "c"
+    },
 
-{
-    question: "What is an error in a program that prevents the program from running as expected?",
-    choiceA: "Bug",
-    choiceB: "Code",
-    choiceC: "Algorithm",
-    choiceD: "java",
-    correctAnswer: "a"
-},
+    {
+        question: "What is an error in a program that prevents the program from running as expected?",
+        choiceA: "Bug",
+        choiceB: "Code",
+        choiceC: "Algorithm",
+        choiceD: "java",
+        correctAnswer: "a"
+    },
 
-{
-    question: "What is the name for the basic orders given to a computer?",
-    choiceA: "Line",
-    choiceB: "Elements",
-    choiceC: "Algorithm",
-    choiceD: "Code",
-    correctAnswer: "d"
-},
+    {
+        question: "What is the name for the basic orders given to a computer?",
+        choiceA: "Line",
+        choiceB: "Elements",
+        choiceC: "Algorithm",
+        choiceD: "Code",
+        correctAnswer: "d"
+    },
 
-{
-    question: "What kind of instructions are used to do a repetitive task?",
-    choiceA: "A loop",
-    choiceB: "A function",
-    choiceC: "A condition",
-    choiceD: "An Event",
-    correctAnswer: "a"
-},
+    {
+        question: "What kind of instructions are used to do a repetitive task?",
+        choiceA: "A loop",
+        choiceB: "A function",
+        choiceC: "A condition",
+        choiceD: "An Event",
+        correctAnswer: "a"
+    },
 
-{
-    question: "What do you call a person who writes the instructions for the computer to complete a task?",
-    choiceA: "A composer",
-    choiceB: "A programmer",
-    choiceC: "A robot",
-    choiceD: "R2-D2",
-    correctAnswer: "b"
-},
+    {
+        question: "What do you call a person who writes the instructions for the computer to complete a task?",
+        choiceA: "A composer",
+        choiceB: "A programmer",
+        choiceC: "A robot",
+        choiceD: "R2-D2",
+        correctAnswer: "b"
+    },
 ];
 
 // My variables
