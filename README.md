@@ -38,5 +38,5 @@ A visual presentation of the count down timer.
 ## Resources
 * [GitHub Pages](https://github.com/krosario314)
 * [GitHub Repo](https://github.com/krosario314/quizChallenge)
-* [My deployed link]()
+* [My deployed link](https://krosario314.github.io/quizChallenge/)
 * [Bootstrap](https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css)
