@@ -4,13 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Code Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
     <header>
-        <a id="goBack-btn" href="./index.html">Home</a>
+        <div>
+            <a id="goBack-btn" href="./index.html">Home</a>
+        </div>
         <p>For computer science lovers!</p>
-        <h1>The Coding Quiz</h1>
+        <h1 id="codeHeader">The Coding Quiz</h1>
     </header>
     <div class="container">
     <!-- quiz buttons -->
@@ -37,12 +40,16 @@
     <!-- End of quiz buttons -->
     <div id="highscoreContainer">
     <div id="high-scores-page">
-        <div id="highscoreTitle">
-            <h3>User Nickname</h3>
-            <h3>Score</h3>
+        <div class="row" id="highscoreTitle">
+            <div id="nickname" class="col-md-7">
+                <h3>Nickname</h3>
+                <div id="highscoreNickname">Nicknames</div>
+            </div>
+            <div class="col-md-5">
+                <h3>Score</h3>
+                <div id="highscore-List">List</div>
+            </div>
         </div>
-        <div id="highscoreNicknames">Nicknames</div>
-        <div id="highscore-List">List</div>
     </div>
     <div id="endQuizCommands">
         <button id="takeAgain" onclick="restartQuiz()">Take Quiz Again</button>

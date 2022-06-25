@@ -120,17 +120,18 @@ function showScore(){
     quizText.style.display = "none";
     quizOver.style.display = "flex";
     clearInterval(timerInterval);
-    highscoreUsername.value = " ";
+    //highscoreUsername.value = " ";
     finalScoreContainer.innerHTML = "Your score is " + score + "/" + quizQuestions.length + " !";
 }
 // Saves scores and nickname with onClick
 submitBtn.addEventListener("click", function highscore(){
-    if (highscoreUsername.value === " ") {
+    if (usernameDisplay.value === " ") {
         alert("Must enter a nickname");
         return false;
     } else {
-        var savedScores = JSON.parse(localStorage.getItem("savedScores"))
-        var currentUser = highscoreUsername.value.trim();
+        var savedScores = JSON.parse(localStorage.getItem("savedScores")) || []
+        console.log(usernameDisplay.value)
+        var currentUser = usernameDisplay.value.trim();
         var currentHighscore = {
             name: currentUser,
             score: score
@@ -147,15 +148,15 @@ submitBtn.addEventListener("click", function highscore(){
 });
 // Clear scores button
 function generateHighscores(){
-    usernameDisplay.innerHTML = "";
+    highscoreUsername.innerHTML = "";
     highscoreDisplay.innerHTML = "";
     var highscores = JSON.parse(localStorage.getItem("savedScores")) || [];
     for (i = 0; i < highscores.length; i++){
-        var newName = document.createElement("li");
-        var newScore = document.createElement("li");
+        var newName = document.createElement("h3");
+        var newScore = document.createElement("h3");
         newName.textContent = highscores[i].name;
         newScore.textContent = highscores[i].score;
-        usernameDisplay.appendChild(newName);
+        highscoreUsername.appendChild(newName);
         highscoreDisplay.appendChild(newScore);
     }
 }
